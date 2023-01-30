@@ -1,0 +1,7 @@
+@import 'Control.scss';
+@import 'Body.scss';
+@import 'Resolucao.scss';
+@import 'Menu.scss';
+@import 'Footer.scss';
+
+$footertopvalue: calc(#{$menuheight} + #{$bodyheight});

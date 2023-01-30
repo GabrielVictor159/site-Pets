@@ -1,0 +1,129 @@
+@import 'Base/Components.scss';
+@import 'Base/LayoutDesign.scss';
+@import 'Layout/Layout.scss';
+@import 'State/Animation.scss';
+@import 'State/Hovers.scss';
+
+body{
+    display: flex;
+  justify-content: center;
+  background-color: white;
+ 
+}
+#page {
+    $pagewidth:1533px;
+    $pageheight:960px;
+    width: $pagewidth;
+    height: $pageheight; 
+.Head{
+    text-align: center;
+    font: bold 15pt Arial;  
+    color: white;
+    top: 0;
+position: fixed;
+width: $pagewidth;
+height: 92px;
+
+.headbackground{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(36, 36, 36);
+    opacity: 0.5;
+}
+
+@mixin atobutton(){
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    
+}
+.Serviços{
+    @include atobutton();
+    color: white;
+@include button(7.18% , 100% , absolute , 6.78% , 0% , none , none , none);
+transition: all 0.5s;
+&:hover{
+    color: black;
+    background-color: white;
+}
+}
+
+
+.Produtos{
+    @include atobutton();
+    color: white;
+    @include button(7.18% , 100% , absolute , 13.96% , 0% , none , none , none);
+    transition: all 0.5s;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+}
+
+.Inicio{
+    @include atobutton();
+    color: white;
+    @include button(7.18% , 100% , absolute , 21.14% , 0% , none , none , none);
+    transition: all 0.5s;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+    }
+
+
+.FaleConosco{
+    @include atobutton();
+    color: white;
+    @include button(7.18% , 100% , absolute , 28.31% , 0% , none , none , none);
+    transition: all 0.5s;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+    }
+
+
+.Logo{
+    @include button(100px , 80px , absolute , 92% , 0px , none , none , none);
+    background-image: url("../../Imgs/logo.png");
+        background-size: 80% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+
+}
+.Body{
+    width: $pagewidth;
+    height: 900px;
+    position: absolute;
+    top: 90px;
+    background-image: url(../../Imgs/backgrounds/20210830_105255.gif);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    video{
+        width: $pagewidth;
+        height: 900px;
+        object-fit: cover;
+        position: absolute;
+        top: 0px;
+        
+      }
+.textocontainer{
+    font: 15pt Arial;  
+    text-align: center;
+    @include centralizar(absolute , none , 50%);
+    width: 80%;
+    height: 80%;
+    background-color: white;
+}
+        
+       
+    }
+    
+}
+

@@ -1,0 +1,9 @@
+
+@mixin Bodyproperties(){
+    
+    position: relative;
+    left: 0;
+    top: calc(#{$menuheight} - 20px);
+    width: $valorwidth;
+    height: $bodyheight;
+}

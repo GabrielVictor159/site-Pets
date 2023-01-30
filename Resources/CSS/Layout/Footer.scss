@@ -1,0 +1,10 @@
+
+@mixin Footerproperties(){
+   
+        position: absolute;
+        top: $footertopvalue;
+        left: 0;
+        width: $valorwidth;
+        height: $heightfooter;
+        
+}

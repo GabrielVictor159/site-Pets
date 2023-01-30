@@ -1,0 +1,159 @@
+@import 'Base/Components.scss';
+@import 'Base/LayoutDesign.scss';
+@import 'State/Animation.scss';
+@import 'State/Hovers.scss';
+$widthtotal:1533px;
+$heightotal:2533px;
+body{
+    display: flex;
+  justify-content: center;
+  background-color: white;
+ 
+}
+.Body{
+    width: $widthtotal;
+    height: calc(#{$heightotal}*0.879);
+    .banner{
+        width: $widthtotal;
+        height: calc(#{$heightotal}*0.154);
+        position: fixed;
+        top: calc(#{$heightotal}*0.031);
+        video{
+            width: $widthtotal;
+            height: calc(#{$heightotal}*0.154);
+            object-fit: cover;
+            position: absolute;
+            top: 0px;
+            
+          }
+        h1{
+            font: bold 35pt Arial;  
+            color: white;
+            @include centralizar(absolute , 45% , 25%);
+        }
+    }
+    .fundobody{
+        position: absolute;
+        top: calc(#{$heightotal}*0.154);
+        width:$widthtotal;
+        height: calc(#{$heightotal}*0.724);
+        background-color: white;
+    }
+    table{
+        width: calc(#{$widthtotal}*0.848);
+        font: 15pt Arial; 
+        @include centralizar(absolute , 50% , none);
+        top: calc(#{$heightotal}*0.118);
+        border-spacing:40px;
+       
+        
+        .produtos{
+            background-color: white;
+            @include dropshadow(10px 10px 7px rgb(134, 134, 134));
+            transition: all 0.5s;
+            &:hover{
+                border: 5px solid rgb(7, 94, 145);
+                border-radius: 20px;
+            }
+            h1{
+                transform: translate(47% , 10%);
+            }
+            p{
+                transform: translate(40% , 30%);
+            }
+            .images{
+                width: calc(#{$widthtotal}*0.117);
+                height: calc(#{$heightotal}*0.079);
+                background-color: rgb(65, 65, 65);
+                transform: translate(10% , -35%);
+            }
+
+        }
+    }
+
+}
+.Head{
+    text-align: center;
+    font: bold 15pt Arial;  
+    color: white;
+    position:fixed;
+    top: 0;
+width: $widthtotal;
+height: calc(#{$heightotal}*0.035);
+background-color: rgb(36, 36, 36);
+border: 2px solid black;
+@include dropshadow(0px 5px 2px black);
+
+@mixin atobutton(){
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    
+}
+.Inicio{
+    @include atobutton();
+    color: white;
+@include button(7.18% , 100% , absolute , 6.78% , 0% , none , none , none);
+transition: all 0.5s;
+&:hover{
+    color: black;
+    background-color: white;
+}
+}
+
+
+.Produtos{
+    @include atobutton();
+    color: white;
+    @include button(7.18% , 100% , absolute , 13.96% , 0% , none , none , none);
+    transition: all 0.5s;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+}
+
+.Cadastro{
+    @include atobutton();
+    color: white;
+    @include button(7.18% , 100% , absolute , 21.14% , 0% , none , none , none);
+    transition: all 0.5s;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+    }
+
+
+.FaleConosco{
+    @include atobutton();
+    color: white;
+    @include button(7.18% , 100% , absolute , 28.31% , 0% , none , none , none);
+    transition: all 0.5s;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+    }
+
+
+.Logo{
+    @include button(5% , 80% , absolute , 92% , 15% , none , none , none);
+    background-image: url("../../Imgs/logo.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+
+}
+.Footer{
+    width: $widthtotal;
+    height: calc(#{$heightotal}*0.09);
+    position: absolute;
+    top: calc(#{$heightotal}*0.879);
+    background-color: rgb(61, 61, 61);
+
+}

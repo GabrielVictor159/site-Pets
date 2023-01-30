@@ -1,0 +1,174 @@
+@charset "UTF-8";
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+body {
+  display: flex;
+  justify-content: center;
+  background-color: white; }
+
+.Body {
+  width: 1533px;
+  height: calc(2533px*0.879); }
+  .Body .banner {
+    width: 1533px;
+    height: calc(2533px*0.154);
+    position: fixed;
+    top: calc(2533px*0.031); }
+    .Body .banner video {
+      width: 1533px;
+      height: calc(2533px*0.154);
+      object-fit: cover;
+      position: absolute;
+      top: 0%; }
+    .Body .banner h1 {
+      font: bold 35pt Arial;
+      color: white;
+      position: absolute;
+      left: 45%;
+      transform: translateX(-45%);
+      margin-right: -45%;
+      top: 25%;
+      transform: translateY(-25%); }
+  .Body .fundobody {
+    position: absolute;
+    top: calc(2533px*0.154);
+    width: 1533px;
+    height: calc(2533px*0.724);
+    background-color: white; }
+  .Body table {
+    width: calc(1533px*0.544);
+    height: calc(2533px*0.671);
+    font: 15pt Arial;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-right: -50%;
+    top: calc(2533px*0.118); }
+    .Body table .serviços {
+      width: calc(1533px*0.544);
+      height: calc(2533px*0.156);
+      background-color: white;
+      box-shadow: 10px 10px 7px #868686;
+      transition: all 0.5s; }
+      .Body table .serviços:hover {
+        border: 5px solid #1082c4;
+        border-radius: 20px; }
+      .Body table .serviços h1 {
+        position: absolute;
+        left: 65%;
+        transform: translateX(-65%);
+        margin-right: -65%; }
+      .Body table .serviços p {
+        position: absolute;
+        left: 40%;
+        transform: translateX(-40%);
+        margin-right: -40%;
+        transform: translateY(80px); }
+      .Body table .serviços .images {
+        width: calc(1533px*0.156);
+        height: calc(2533px*0.109);
+        background-color: #414141;
+        position: absolute;
+        left: 5%;
+        transform: translateX(-5%);
+        margin-right: -5%;
+        transform: translateY(50px); }
+
+.Head {
+  text-align: center;
+  font: bold 15pt Arial;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 1533px;
+  height: calc(2533px*0.035);
+  background-color: #242424;
+  border: 2px solid black;
+  box-shadow: 0px 5px 2px black; }
+  .Head .Inicio {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    color: white;
+    position: absolute;
+    position: absolute;
+    left: 6.78%;
+    top: 0%;
+    width: 7.18%;
+    height: 100%;
+    transition: all 0.5s; }
+    .Head .Inicio:hover {
+      color: black;
+      background-color: white; }
+  .Head .Produtos {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    color: white;
+    position: absolute;
+    position: absolute;
+    left: 13.96%;
+    top: 0%;
+    width: 7.18%;
+    height: 100%;
+    transition: all 0.5s; }
+    .Head .Produtos:hover {
+      color: black;
+      background-color: white; }
+  .Head .Cadastro {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    color: white;
+    position: absolute;
+    position: absolute;
+    left: 21.14%;
+    top: 0%;
+    width: 7.18%;
+    height: 100%;
+    transition: all 0.5s; }
+    .Head .Cadastro:hover {
+      color: black;
+      background-color: white; }
+  .Head .FaleConosco {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    color: white;
+    position: absolute;
+    position: absolute;
+    left: 28.31%;
+    top: 0%;
+    width: 7.18%;
+    height: 100%;
+    transition: all 0.5s; }
+    .Head .FaleConosco:hover {
+      color: black;
+      background-color: white; }
+  .Head .Logo {
+    position: absolute;
+    position: absolute;
+    left: 92%;
+    top: 15%;
+    width: 5%;
+    height: 80%;
+    background-image: url("../../Imgs/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.Footer {
+  width: 1533px;
+  height: calc(2533px*0.09);
+  position: absolute;
+  top: calc(2533px*0.879);
+  background-color: #3d3d3d; }
+
+/*# sourceMappingURL=Servi%C3%A7os.css.map */

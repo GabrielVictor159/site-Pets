@@ -1,0 +1,337 @@
+@import 'Base/Components.scss';
+@import 'Base/LayoutDesign.scss';
+@import 'State/Animation.scss';
+@import 'State/Hovers.scss';
+$widthtotal: 1533px;
+$heightotal: 2533px;
+body{
+    display: flex;
+  justify-content: center;
+  background-color: white;
+ 
+}
+body::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
+    content:url("../../Imgs/animais/SemTítulo-1.jpg") url("../../Imgs/animais/SemTítulo-2.jpg") url("../../Imgs/animais/SemTítulo-3.jpg") url("../../Imgs/animais/SemTítulo-4.jpg") url("../../Imgs/animais/SemTítulo-5.jpg") url("../../Imgs/animais/SemTítulo-6.jpg") url("../../Imgs/animais/SemTítulo-7.jpg") url("../../Imgs/animais/SemTítulo-8.jpg") url("../../Imgs/backgrounds/20210901_130651.gif") url("../../Imgs/backgrounds/pexels-weldi-studio-design-8675541.gif");   // load images
+ }
+.Head{
+    text-align: center;
+    font: bold 15pt Arial;  
+    color: white;
+
+position: fixed;
+top: 0;
+width: $widthtotal;
+height: calc(#{$heightotal}*0.03);
+background-color: rgb(36, 36, 36);
+border: 2px solid black;
+@include dropshadow(0px 5px 2px black);
+@include translatesimpleanimation(surgirmenu , 0% , 0% , -200px , 0px);
+animation-name: surgirmenu;
+         animation-duration: 2s;
+         animation-delay: 0s;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+@mixin atobutton(){
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    
+}
+.Serviços{
+    @include atobutton();
+    color: white;
+@include button(7.18% , 100% , absolute , 6.78% , 0% , none , none , none);
+transition: all 0.5s;
+&:hover{
+    color: black;
+    background-color: white;
+}
+}
+
+
+.Produtos{
+    @include atobutton();
+    color: white;
+    @include button(7.18% , 100% , absolute , 13.96% , 0% , none , none , none);
+    transition: all 0.5s;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+}
+
+.Cadastro{
+    @include atobutton();
+    color: white;
+    @include button(7.18% , 100% , absolute , 21.14% , 0% , none , none , none);
+    transition: all 0.5s;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+    }
+
+
+.FaleConosco{
+    @include atobutton();
+    color: white;
+    @include button(7.18% , 100% , absolute , 28.31% , 0% , none , none , none);
+    transition: all 0.5s;
+    &:hover{
+        color: black;
+        background-color: white;
+    }
+    }
+
+
+.Logo{
+    @include button(5% , 80% , absolute , 92% , 15% , none , none , none);
+    background-image: url("../../Imgs/logo.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+
+}
+.Body{
+    position: relative;
+    left: 0;
+    top: calc(#{$heightotal}*0.029);
+    width: $widthtotal;
+    height: calc(#{$heightotal}*0.86);
+    @include opacitysimpleanimation(opacitybodysurgir , 0 , 1);
+    animation-name: opacitybodysurgir;
+         animation-duration: 2s;
+         animation-delay: 0s;
+         animation-iteration-count: 1;
+         animation-fill-mode: forwards;
+    .parte1{
+        
+        width: $widthtotal;
+        $parte1height:calc(#{$heightotal}*0.306);
+        height: $parte1height; 
+        display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+        .imagensslide{         
+            @include border(7px , solid , linear-gradient(90deg, rgba(104,9,121,1) 0%, rgba(146,66,7,1) 51%, rgba(169,0,255,1) 100%));
+            @include dropshadow(5px 5px 5px black);
+            background-image: ("../../Imgs/animais/SemTítulo-1.jpg");
+            background-color: white;
+         position: absolute;
+         width: calc(#{$widthtotal}*0.548);
+         height: calc(#{$heightotal}*0.189);
+         
+         @include imageslide(banner , 8 , "../../Imgs/animais/SemTítulo-1.jpg" , "../../Imgs/animais/SemTítulo-2.jpg" , "../../Imgs/animais/SemTítulo-3.jpg" , "../../Imgs/animais/SemTítulo-4.jpg" , "../../Imgs/animais/SemTítulo-5.jpg" , "../../Imgs/animais/SemTítulo-6.jpg" , "../../Imgs/animais/SemTítulo-7.jpg" , "../../Imgs/animais/SemTítulo-8.jpg" , none , none );
+         animation-name: banner;
+         animation-duration: 30s ;
+         animation-delay: 0s , 2s;
+         animation-iteration-count: infinite;
+         animation-fill-mode: forwards;
+         
+        
+        }
+        video{
+            width: $widthtotal;
+            height: $parte1height;
+            object-fit: cover;
+          }
+
+    }
+    .parte2{
+    background-color: #ececec;
+        width: $widthtotal;
+        $parte2height:calc(#{$heightotal}*0.294);
+        height: $parte2height; 
+        
+        .tituloparte2{
+            font: bold 35pt Arial;
+            @include centralizar2();
+
+        }
+        .containerprodutos{
+            @include button(calc(#{$widthtotal}*0.854) , calc(#{$heightotal}*0.184), absolute , calc(#{$widthtotal}*0.08) , calc(#{$heightotal}*0.375) , none , none , none);
+            $produtoswidth:22.52%;
+            $produtosheight:42.61%;
+            $pbackgroundcolor:10px 10px 0px rgb(80, 80, 80);
+            $pborderradius:none;
+            $pbordersize:2px;
+            $pborderstyle:solid;
+            $pborderimage:linear-gradient(90deg, rgb(204, 204, 204) 0%, rgb(94, 94, 94) 51%, rgb(37, 37, 37) 100%);
+            $pelevationhover1:-5%;
+            $pelevationhover2:45%;
+            $pelevationhovertime:0.5s;
+            
+            
+            .produto1{
+                
+                @include border($pbordersize , $pborderstyle , $pborderimage);
+                @include elevationhover($pelevationhover1 , $pelevationhovertime);
+                box-shadow: $pbackgroundcolor;
+                @include button($produtoswidth , $produtosheight , absolute , 1%, 0%, none , $pbackgroundcolor , $pborderradius);
+            }
+            .produto2{
+                @include border($pbordersize , $pborderstyle , $pborderimage);
+                @include elevationhover($pelevationhover1 , $pelevationhovertime);
+                box-shadow: $pbackgroundcolor;
+                @include button($produtoswidth , $produtosheight , absolute , 26%, 0%, none , $pbackgroundcolor , $pborderradius);
+            }
+            .produto3{
+                @include border($pbordersize , $pborderstyle , $pborderimage);
+                @include elevationhover($pelevationhover1 , $pelevationhovertime);
+                box-shadow: $pbackgroundcolor;
+                @include button($produtoswidth , $produtosheight , absolute , 51%, 0%, none , $pbackgroundcolor , $pborderradius);
+            }
+            .produto4{
+                @include border($pbordersize , $pborderstyle , $pborderimage);
+                @include elevationhover($pelevationhover1 , $pelevationhovertime);
+                box-shadow: $pbackgroundcolor;
+                @include button($produtoswidth , $produtosheight , absolute , 76%, 0%, none , $pbackgroundcolor , $pborderradius);
+            }
+            .produto5{
+                @include border($pbordersize , $pborderstyle , $pborderimage);
+                @include elevationhover($pelevationhover2 , $pelevationhovertime);
+                box-shadow: $pbackgroundcolor;
+                @include button($produtoswidth , $produtosheight , absolute , 1%, 50%, none , $pbackgroundcolor , $pborderradius);
+            }
+            .produto6{
+                @include border($pbordersize , $pborderstyle , $pborderimage);
+                @include elevationhover($pelevationhover2 , $pelevationhovertime);
+                box-shadow: $pbackgroundcolor;
+                @include button($produtoswidth , $produtosheight , absolute , 26%, 50%, none , $pbackgroundcolor , $pborderradius);
+            }
+            .produto7{
+                @include border($pbordersize , $pborderstyle , $pborderimage);
+                @include elevationhover($pelevationhover2 , $pelevationhovertime);
+                box-shadow: $pbackgroundcolor;
+                @include button($produtoswidth , $produtosheight , absolute , 51%, 50%, none , $pbackgroundcolor , $pborderradius);
+            }
+            .produto8{
+                @include border($pbordersize , $pborderstyle , $pborderimage);
+                @include elevationhover($pelevationhover2 , $pelevationhovertime);
+                box-shadow: $pbackgroundcolor;
+                @include button($produtoswidth , $produtosheight , absolute , 76%, 50%, none , $pbackgroundcolor , $pborderradius);
+            }
+            @mixin backgroundrescize(){
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
+            .produtoimage1{
+                @include button(99% , 65% , absolute , 0% ,0%, none , $pbackgroundcolor , $pborderradius);
+                background-image: url("../../Imgs/produtos/1.png");
+                @include backgroundrescize();
+            }
+            .produtoimage2{
+                @include button(99% , 65% , absolute , 0%,0%, none , $pbackgroundcolor , $pborderradius);
+                background-image: url("../../Imgs/produtos/2.png");
+                @include backgroundrescize();
+            }
+            .produtoimage3{
+                @include button(99% , 65% , absolute , 0%,0%, none , $pbackgroundcolor , $pborderradius);
+                background-image: url("../../Imgs/produtos/3.png");
+                @include backgroundrescize();
+            }
+            .produtoimage4{
+                @include button(99% , 65% , absolute , 0%,0%, none, $pbackgroundcolor , $pborderradius);
+                background-image: url("../../Imgs/produtos/4.png");
+                @include backgroundrescize();
+            }
+            .produtoimage5{
+                @include button(99% , 65% , absolute , 0%,0%, none , $pbackgroundcolor , $pborderradius);
+                background-image: url("../../Imgs/produtos/5.png");
+                @include backgroundrescize();
+            }
+            .produtoimage6{
+                @include button(99% , 65% , absolute , 0%,0%, none , $pbackgroundcolor , $pborderradius);
+                background-image: url("../../Imgs/produtos/6.png");
+                @include backgroundrescize();
+            }
+            .produtoimage7{
+                @include button(99% , 65% , absolute , 0%,0%, none , $pbackgroundcolor , $pborderradius);
+                background-image: url("../../Imgs/produtos/7.png");
+                @include backgroundrescize();
+            }
+            .produtoimage8{
+                @include button(99% , 65% , absolute , 0%,0%, none , $pbackgroundcolor , $pborderradius);
+                background-image: url("../../Imgs/produtos/8.png");
+                @include backgroundrescize();
+            }
+            .produtotexto{
+                background-color: #4e4e4e;
+                @include border($pbordersize , $pborderstyle , $pborderimage);
+                color: white;
+                font:  8pt Arial;
+                text-align: center;
+                @include button(99% , 35% , absolute , 0%, 65%, none , $pbackgroundcolor , $pborderradius);
+            }
+        }
+    }
+    .parte3{
+        $parte3height:calc(#{$heightotal}*0.312);
+        @include button($widthtotal , $parte3height , absolute , 0% , calc(#{$heightotal}*0.60) , none, none , none);
+        video{
+            width: $widthtotal;
+            height: $parte3height;
+            object-fit: cover;
+            position: absolute;
+            top: 0px;
+            
+          }
+        .bloconoticias{
+
+            @include border(7px , solid , linear-gradient(90deg, rgba(104,9,121,1) 0%, rgba(146,66,7,1) 51%, rgba(169,0,255,1) 100%));
+            @include button(calc(#{$widthtotal}*0.797) , calc(#{$heightotal}*0.264) , absolute , calc(#{$widthtotal}*0.095) , 7% , none , white , none);
+            @include dropshadow(5px 5px 5px black);
+            .noticiastitulo{
+                font: bold 35pt Arial;
+                @include centralizar2();
+    
+            }
+            #noticias{
+                width: calc(#{$widthtotal}*0.797);
+                height: calc(#{$heightotal}*0.15);
+                border-collapse: collapse;
+                td{
+                    border-bottom: 2px solid black;
+                }
+                .titulonoticia{
+                    font: bold 25pt Arial;  
+                }
+            }
+            
+            .botaonoticias{
+                color: white;
+                width: 10%;
+                height: 7%;
+                border: 2px solid rgb(0, 60, 255);
+                @include dropshadow(5px 5px 2px black);
+                border-radius: 20px;
+                @include centralizar(absolute, calc(#{$widthtotal}*0.358) , 90%);
+                
+                transition: all 0.5s;
+                background-color:  #aa34d8;
+                &:hover{
+                    background-color: #ff8800; 
+                }
+            }
+        }
+
+    }
+    
+    
+}
+.Footer{
+    width: $widthtotal;
+    height: calc(#{$heightotal}*0.054);
+    position: absolute;
+    top: calc(#{$heightotal}*0.939);
+    background-color: rgb(37, 37, 37);
+    
+}
+

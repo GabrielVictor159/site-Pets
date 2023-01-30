@@ -1,0 +1,504 @@
+@charset "UTF-8";
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+body {
+  display: flex;
+  justify-content: center;
+  background-color: white; }
+
+body::after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url("../../Imgs/animais/SemTítulo-1.jpg") url("../../Imgs/animais/SemTítulo-2.jpg") url("../../Imgs/animais/SemTítulo-3.jpg") url("../../Imgs/animais/SemTítulo-4.jpg") url("../../Imgs/animais/SemTítulo-5.jpg") url("../../Imgs/animais/SemTítulo-6.jpg") url("../../Imgs/animais/SemTítulo-7.jpg") url("../../Imgs/animais/SemTítulo-8.jpg") url("../../Imgs/backgrounds/20210901_130651.gif") url("../../Imgs/backgrounds/pexels-weldi-studio-design-8675541.gif"); }
+
+.Head {
+  text-align: center;
+  font: bold 15pt Arial;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 1533px;
+  height: calc(2533px*0.03);
+  background-color: #242424;
+  border: 2px solid black;
+  box-shadow: 0px 5px 2px black;
+  animation-name: surgirmenu;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+@keyframes surgirmenu {
+  0% {
+    transform: translate(0%, -200px); }
+  100% {
+    transform: translate(0%, 0px); } }
+  .Head .Serviços {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    color: white;
+    position: absolute;
+    position: absolute;
+    left: 6.78%;
+    top: 0%;
+    width: 7.18%;
+    height: 100%;
+    transition: all 0.5s; }
+    .Head .Serviços:hover {
+      color: black;
+      background-color: white; }
+  .Head .Produtos {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    color: white;
+    position: absolute;
+    position: absolute;
+    left: 13.96%;
+    top: 0%;
+    width: 7.18%;
+    height: 100%;
+    transition: all 0.5s; }
+    .Head .Produtos:hover {
+      color: black;
+      background-color: white; }
+  .Head .Cadastro {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    color: white;
+    position: absolute;
+    position: absolute;
+    left: 21.14%;
+    top: 0%;
+    width: 7.18%;
+    height: 100%;
+    transition: all 0.5s; }
+    .Head .Cadastro:hover {
+      color: black;
+      background-color: white; }
+  .Head .FaleConosco {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    color: white;
+    position: absolute;
+    position: absolute;
+    left: 28.31%;
+    top: 0%;
+    width: 7.18%;
+    height: 100%;
+    transition: all 0.5s; }
+    .Head .FaleConosco:hover {
+      color: black;
+      background-color: white; }
+  .Head .Logo {
+    position: absolute;
+    position: absolute;
+    left: 92%;
+    top: 15%;
+    width: 5%;
+    height: 80%;
+    background-image: url("../../Imgs/logo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+
+.Body {
+  position: relative;
+  left: 0;
+  top: calc(2533px*0.029);
+  width: 1533px;
+  height: calc(2533px*0.86);
+  animation-name: opacitybodysurgir;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+@keyframes opacitybodysurgir {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .Body .parte1 {
+    width: 1533px;
+    height: calc(2533px*0.306);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .Body .parte1 .imagensslide {
+      border-width: 7px;
+      border-style: solid;
+      border-image: linear-gradient(90deg, #680979 0%, #924207 51%, #a900ff 100%) 1;
+      box-shadow: 5px 5px 5px black;
+      background-image: "../../Imgs/animais/SemTítulo-1.jpg";
+      background-color: white;
+      position: absolute;
+      width: calc(1533px*0.548);
+      height: calc(2533px*0.189);
+      animation-name: banner;
+      animation-duration: 30s;
+      animation-delay: 0s , 2s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards; }
+@keyframes banner {
+  12.5% {
+    background-image: url(../../Imgs/animais/SemTítulo-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  25% {
+    background-image: url("../../Imgs/animais/SemTítulo-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  37.5% {
+    background-image: url("../../Imgs/animais/SemTítulo-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  50% {
+    background-image: url("../../Imgs/animais/SemTítulo-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  62.5% {
+    background-image: url("../../Imgs/animais/SemTítulo-5.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  75% {
+    background-image: url("../../Imgs/animais/SemTítulo-6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  87.5% {
+    background-image: url("../../Imgs/animais/SemTítulo-7.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  100% {
+    background-image: url("../../Imgs/animais/SemTítulo-8.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; } }
+    .Body .parte1 video {
+      width: 1533px;
+      height: calc(2533px*0.306);
+      object-fit: cover; }
+  .Body .parte2 {
+    background-color: #ececec;
+    width: 1533px;
+    height: calc(2533px*0.294); }
+    .Body .parte2 .tituloparte2 {
+      font: bold 35pt Arial;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    .Body .parte2 .containerprodutos {
+      position: absolute;
+      position: absolute;
+      left: calc(1533px*0.08);
+      top: calc(2533px*0.375);
+      width: calc(1533px*0.854);
+      height: calc(2533px*0.184); }
+      .Body .parte2 .containerprodutos .produto1 {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #cccccc 0%, #5e5e5e 51%, #252525 100%) 1;
+        transition: all 0.5s;
+        box-shadow: 10px 10px 0px #505050;
+        position: absolute;
+        position: absolute;
+        left: 1%;
+        top: 0%;
+        width: 22.52%;
+        height: 42.61%;
+        background-color: 10px 10px 0px #505050; }
+        .Body .parte2 .containerprodutos .produto1:hover {
+          top: -5%; }
+      .Body .parte2 .containerprodutos .produto2 {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #cccccc 0%, #5e5e5e 51%, #252525 100%) 1;
+        transition: all 0.5s;
+        box-shadow: 10px 10px 0px #505050;
+        position: absolute;
+        position: absolute;
+        left: 26%;
+        top: 0%;
+        width: 22.52%;
+        height: 42.61%;
+        background-color: 10px 10px 0px #505050; }
+        .Body .parte2 .containerprodutos .produto2:hover {
+          top: -5%; }
+      .Body .parte2 .containerprodutos .produto3 {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #cccccc 0%, #5e5e5e 51%, #252525 100%) 1;
+        transition: all 0.5s;
+        box-shadow: 10px 10px 0px #505050;
+        position: absolute;
+        position: absolute;
+        left: 51%;
+        top: 0%;
+        width: 22.52%;
+        height: 42.61%;
+        background-color: 10px 10px 0px #505050; }
+        .Body .parte2 .containerprodutos .produto3:hover {
+          top: -5%; }
+      .Body .parte2 .containerprodutos .produto4 {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #cccccc 0%, #5e5e5e 51%, #252525 100%) 1;
+        transition: all 0.5s;
+        box-shadow: 10px 10px 0px #505050;
+        position: absolute;
+        position: absolute;
+        left: 76%;
+        top: 0%;
+        width: 22.52%;
+        height: 42.61%;
+        background-color: 10px 10px 0px #505050; }
+        .Body .parte2 .containerprodutos .produto4:hover {
+          top: -5%; }
+      .Body .parte2 .containerprodutos .produto5 {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #cccccc 0%, #5e5e5e 51%, #252525 100%) 1;
+        transition: all 0.5s;
+        box-shadow: 10px 10px 0px #505050;
+        position: absolute;
+        position: absolute;
+        left: 1%;
+        top: 50%;
+        width: 22.52%;
+        height: 42.61%;
+        background-color: 10px 10px 0px #505050; }
+        .Body .parte2 .containerprodutos .produto5:hover {
+          top: 45%; }
+      .Body .parte2 .containerprodutos .produto6 {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #cccccc 0%, #5e5e5e 51%, #252525 100%) 1;
+        transition: all 0.5s;
+        box-shadow: 10px 10px 0px #505050;
+        position: absolute;
+        position: absolute;
+        left: 26%;
+        top: 50%;
+        width: 22.52%;
+        height: 42.61%;
+        background-color: 10px 10px 0px #505050; }
+        .Body .parte2 .containerprodutos .produto6:hover {
+          top: 45%; }
+      .Body .parte2 .containerprodutos .produto7 {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #cccccc 0%, #5e5e5e 51%, #252525 100%) 1;
+        transition: all 0.5s;
+        box-shadow: 10px 10px 0px #505050;
+        position: absolute;
+        position: absolute;
+        left: 51%;
+        top: 50%;
+        width: 22.52%;
+        height: 42.61%;
+        background-color: 10px 10px 0px #505050; }
+        .Body .parte2 .containerprodutos .produto7:hover {
+          top: 45%; }
+      .Body .parte2 .containerprodutos .produto8 {
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #cccccc 0%, #5e5e5e 51%, #252525 100%) 1;
+        transition: all 0.5s;
+        box-shadow: 10px 10px 0px #505050;
+        position: absolute;
+        position: absolute;
+        left: 76%;
+        top: 50%;
+        width: 22.52%;
+        height: 42.61%;
+        background-color: 10px 10px 0px #505050; }
+        .Body .parte2 .containerprodutos .produto8:hover {
+          top: 45%; }
+      .Body .parte2 .containerprodutos .produtoimage1 {
+        position: absolute;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 99%;
+        height: 65%;
+        background-color: 10px 10px 0px #505050;
+        background-image: url("../../Imgs/produtos/1.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto; }
+      .Body .parte2 .containerprodutos .produtoimage2 {
+        position: absolute;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 99%;
+        height: 65%;
+        background-color: 10px 10px 0px #505050;
+        background-image: url("../../Imgs/produtos/2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto; }
+      .Body .parte2 .containerprodutos .produtoimage3 {
+        position: absolute;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 99%;
+        height: 65%;
+        background-color: 10px 10px 0px #505050;
+        background-image: url("../../Imgs/produtos/3.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto; }
+      .Body .parte2 .containerprodutos .produtoimage4 {
+        position: absolute;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 99%;
+        height: 65%;
+        background-color: 10px 10px 0px #505050;
+        background-image: url("../../Imgs/produtos/4.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto; }
+      .Body .parte2 .containerprodutos .produtoimage5 {
+        position: absolute;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 99%;
+        height: 65%;
+        background-color: 10px 10px 0px #505050;
+        background-image: url("../../Imgs/produtos/5.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto; }
+      .Body .parte2 .containerprodutos .produtoimage6 {
+        position: absolute;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 99%;
+        height: 65%;
+        background-color: 10px 10px 0px #505050;
+        background-image: url("../../Imgs/produtos/6.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto; }
+      .Body .parte2 .containerprodutos .produtoimage7 {
+        position: absolute;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 99%;
+        height: 65%;
+        background-color: 10px 10px 0px #505050;
+        background-image: url("../../Imgs/produtos/7.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto; }
+      .Body .parte2 .containerprodutos .produtoimage8 {
+        position: absolute;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        width: 99%;
+        height: 65%;
+        background-color: 10px 10px 0px #505050;
+        background-image: url("../../Imgs/produtos/8.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto; }
+      .Body .parte2 .containerprodutos .produtotexto {
+        background-color: #4e4e4e;
+        border-width: 2px;
+        border-style: solid;
+        border-image: linear-gradient(90deg, #cccccc 0%, #5e5e5e 51%, #252525 100%) 1;
+        color: white;
+        font: 8pt Arial;
+        text-align: center;
+        position: absolute;
+        position: absolute;
+        left: 0%;
+        top: 65%;
+        width: 99%;
+        height: 35%;
+        background-color: 10px 10px 0px #505050; }
+  .Body .parte3 {
+    position: absolute;
+    position: absolute;
+    left: 0%;
+    top: calc(2533px*0.60);
+    width: 1533px;
+    height: calc(2533px*0.312); }
+    .Body .parte3 video {
+      width: 1533px;
+      height: calc(2533px*0.312);
+      object-fit: cover;
+      position: absolute;
+      top: 0px; }
+    .Body .parte3 .bloconoticias {
+      border-width: 7px;
+      border-style: solid;
+      border-image: linear-gradient(90deg, #680979 0%, #924207 51%, #a900ff 100%) 1;
+      position: absolute;
+      position: absolute;
+      left: calc(1533px*0.095);
+      top: 7%;
+      width: calc(1533px*0.797);
+      height: calc(2533px*0.264);
+      background-color: white;
+      box-shadow: 5px 5px 5px black; }
+      .Body .parte3 .bloconoticias .noticiastitulo {
+        font: bold 35pt Arial;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+      .Body .parte3 .bloconoticias #noticias {
+        width: calc(1533px*0.797);
+        height: calc(2533px*0.15);
+        border-collapse: collapse; }
+        .Body .parte3 .bloconoticias #noticias td {
+          border-bottom: 2px solid black; }
+        .Body .parte3 .bloconoticias #noticias .titulonoticia {
+          font: bold 25pt Arial; }
+      .Body .parte3 .bloconoticias .botaonoticias {
+        color: white;
+        width: 10%;
+        height: 7%;
+        border: 2px solid #003cff;
+        box-shadow: 5px 5px 2px black;
+        border-radius: 20px;
+        position: absolute;
+        left: calc(1533px*0.358);
+        transform: translateX(-calc(1533px*0.358));
+        margin-right: -calc(1533px*0.358);
+        top: 90%;
+        transform: translateY(-90%);
+        transition: all 0.5s;
+        background-color: #aa34d8; }
+        .Body .parte3 .bloconoticias .botaonoticias:hover {
+          background-color: #ff8800; }
+
+.Footer {
+  width: 1533px;
+  height: calc(2533px*0.054);
+  position: absolute;
+  top: calc(2533px*0.939);
+  background-color: #252525; }
+
+/*# sourceMappingURL=Index.css.map */
